@@ -14,4 +14,4 @@ ENV PATH="/root/.foundry/bin:${PATH}"
 
 EXPOSE 8545
 
-CMD ["anvil", "--host", "0.0.0.0", "--port", "8545"]
+CMD ["anvil", "--chain-id", "29139", "--host", "0.0.0.0", "--port", "8545"]
