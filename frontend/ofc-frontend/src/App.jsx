@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <h1>Olney Fans League</h1>
+      <h1>Olney Fans League Test</h1>
       <WalletConnect onConnect={setAccount} />
       {account && (
         <>

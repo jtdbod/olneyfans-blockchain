@@ -27,9 +27,10 @@ export default function TokenActions({ tokenAddress }) {
     }
 
     console.log("window.ethereum:", window.ethereum);
-    console.log("Token Address:", tokenAddress);
+    console.log("Token ****** Address:", tokenAddress);
 
     async function fetchBalance() {
+      console.log("Fetching balance for account:", account);
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       console.log("Provider:", provider);
       const signer = provider.getSigner();
@@ -39,6 +40,7 @@ export default function TokenActions({ tokenAddress }) {
     }
 
     if (account && tokenAddress) {
+      console.log("Test")
       fetchBalance();
     }
   }, [account, tokenAddress]);
